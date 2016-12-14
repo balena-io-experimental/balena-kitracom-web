@@ -2,6 +2,9 @@
 
 A demo app that exposes a simple web interface to interact with kitracom and push data gathered to artik cloud
 
+![demo-at-slush](https://pbs.twimg.com/media/CynnELmXgAEjCol.jpg:large)
+
+* Check out a [Youtube video from Samsung IoT](https://youtu.be/5xIitBTZynw)
 ## License
 
 Copyright 2016 Resinio Ltd.
