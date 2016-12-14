@@ -11,6 +11,8 @@ A demo app that exposes a simple web interface to interact with kitracom and pus
 Variable Name | Default | Description
 ------------ | ------------- | -------------
 WEB_SERVER_PORT | `80` | the port on which expose the Web UI
+ARTIKCLOUD_DEVICE_ID | `null` | your Artik Cloud Device Type ID
+ARTIKCLOUD_DEVICE_TOKEN | `null` | your Artik Cloud Device Type Token
 
 Copyright 2016 Resinio Ltd.
 
