@@ -7,6 +7,11 @@ A demo app that exposes a simple web interface to interact with kitracom and pus
 * Check out a [Youtube video from Samsung IoT](https://youtu.be/5xIitBTZynw)
 ## License
 
+## Configure via [environment variables](https://docs.resin.io/management/env-vars/)
+Variable Name | Default | Description
+------------ | ------------- | -------------
+WEB_SERVER_PORT | `80` | the port on which expose the Web UI
+
 Copyright 2016 Resinio Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
