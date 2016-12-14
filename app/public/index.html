@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kitra520</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-TileColor" content="#FFC107">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/manifest.json">
+    <meta name="msapplication-TileImage" content="/assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#FFC107">
+    <!-- css -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+</head>
+
+<body class="black">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper amber darken-1">
+                <a href="#!" class="brand-logo black-text">Dashboard</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="black-text">Fork me on GitHub</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+
+        <div class="col s12 m6 l3">
+            <div class="card light-blue darken-4">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons">filter_tilt_shift</i> Accelerometer</span>
+                    <p>embedded IMU</p>
+                    <hr>
+                    <div class="col s4 m4 l4">
+                        X: <span id="accel-x">0</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        Y: <span id="accel-y">0</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        Z: <span id="accel-z">0</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card green darken-2">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons">rotate_left</i> Gyroscope</span>
+                    <p>embedded IMU</p>
+                    <hr>
+                    <div class="col s4 m4 l4">
+                        X: <span id="gyro-x">0</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        Y: <span id="gyro-y">0</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        Z: <span id="gyro-z">0</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card amber darken-4">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons">filter_drama</i> Barometer</span>
+                    <p>embedded Environmental Sensor</p>
+                    <hr>
+                    <div class="col s4 m4 l4">
+                        Temp: <span id="bar-t">22.4</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        Press: <span id="bar-p">1.02</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        Alt: <span id="bar-a">115</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card cyan darken-3">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons">battery_full</i> Battery</span>
+                    <p>3.7V 500mAh</p>
+                    <hr>
+                    <div class="col s6 m6 l6">
+                        Voltage: <span id="battery-volt">3.8</span>
+                    </div>
+                    <div class="col s6 m6 l6">
+                        Charging: <span id="battery-volt">no</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons" id="led1-icon">wb_incandescent</i> Led 1</span>
+                    <p>RGB led</p>
+                    <hr>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">blur_circular</i> <span id="led1-status">enabled</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">color_lens</i> <span id="led1-color-info">000000</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">brightness_medium</i> <span id="led1-brightness-info">0</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">color_lens</i>
+                            <input id="led1-color" type="text" class="validate led_color">
+                            <label for="led1-color">HEX</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">brightness_medium</i>
+                            <input id="led1-brightness" type="number" min="0" max="100" step="10" class="validate led_brightness">
+                            <label for="led1-brightness">0-100</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <button class="btn waves-effect waves-light blue-grey darken-4 ledsubmit" type="submit" name="action" data-ledid="1">
+                            <i class="material-icons">flash_on</i>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons" id="led2-icon">wb_incandescent</i> Led 2</span>
+                    <p>RGB led</p>
+                    <hr>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">blur_circular</i> <span id="led2-status">enabled</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">color_lens</i> <span id="led2-color-info">000000</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">brightness_medium</i> <span id="led2-brightness-info">0</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">color_lens</i>
+                            <input id="led2-color" type="text" class="validate led_color" >
+                            <label for="led1-color">HEX</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">brightness_medium</i>
+                            <input id="led2-brightness" type="number" min="0" max="100" step="10" class="validate led_brightness">
+                            <label for="led2-brightness">0-100</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <button class="btn waves-effect waves-light blue-grey darken-4 ledsubmit" type="submit" name="action" data-ledid="2">
+                            <i class="material-icons">flash_on</i>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons" id="led3-icon">wb_incandescent</i> Led 3</span>
+                    <p>RGB led</p>
+                    <hr>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">blur_circular</i> <span id="led3-status">enabled</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">color_lens</i> <span id="led3-color-info">000000</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">brightness_medium</i> <span id="led3-brightness-info">0</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">color_lens</i>
+                            <input id="led3-color" type="text" class="validate led_color">
+                            <label for="led3-color">HEX</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">brightness_medium</i>
+                            <input id="led3-brightness" type="number" min="0" max="100" step="10" class="validate led_brightness">
+                            <label for="led3-brightness">0-100</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <button class="btn waves-effect waves-light blue-grey darken-4 ledsubmit" type="submit" name="action" data-ledid="3">
+                            <i class="material-icons">flash_on</i>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons" id="led4-icon">wb_incandescent</i> Led 4</span>
+                    <p>RGB led</p>
+                    <hr>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">blur_circular</i> <span id="led4-status">enabled</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">color_lens</i> <span id="led4-color-info">000000</span>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <i class="material-icons">brightness_medium</i> <span id="led4-brightness-info">0</span>
+                    </div>
+                    <br>
+                </div>
+                <div class="card-action">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">color_lens</i>
+                            <input id="led4-color" type="text" class="validate led_color">
+                            <label for="led4-color">HEX</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix white-text">brightness_medium</i>
+                            <input id="led4-brightness" type="number" min="0" max="100" step="10" class="validate led_brightness">
+                            <label for="led4-brightness">0-100</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <button class="btn waves-effect waves-light blue-grey darken-4 ledsubmit" type="submit" name="action" data-ledid="4">
+                            <i class="material-icons">flash_on</i>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="js/led.js"></script>
+</body>
+
+</html>
